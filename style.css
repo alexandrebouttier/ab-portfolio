@@ -30,7 +30,10 @@ body {
     font-family: "Open-sans-regular";
   
 }
-
+.container-items{
+    display: flex;
+    flex-wrap: wrap;
+}
 /*========================== 02.POLICES ========================== */
 
 h3 {
