@@ -28,33 +28,43 @@
         <h3>Comment puis-je vous aider?</h3>
         <?php query_posts('pagename=accueil');
          while (have_posts()) : the_post(); ?>
-             <?php the_content(); ?>
-            <?php endwhile; ?>
+        <?php the_content(); ?>
+        <?php endwhile; ?>
     </section>
     <!-- // Fin intro  -->
 
     <!-- Début services -->
     <section class="services">
         <div class="columns">
-        <?php query_posts('p=26');
+            <?php query_posts('p=26');
          while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" <?php the_post_thumbnail();?></>
+                <img class="has-text-left" <?php the_post_thumbnail();?>
+                </>
             </div>
             <div class="column is-4">
-                <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <h4>
+                    <?php the_title(); ?>
+                </h4>
+                <p>
+                    <?php the_content(); ?>
+                </p>
             </div>
             <?php endwhile; ?>
 
- <?php query_posts('p=28');
+            <?php query_posts('p=28');
          while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" <?php the_post_thumbnail();?></>
+                <img class="has-text-left" <?php the_post_thumbnail();?>
+                </>
             </div>
             <div class="column is-4">
-                <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <h4>
+                    <?php the_title(); ?>
+                </h4>
+                <p>
+                    <?php the_content(); ?>
+                </p>
             </div>
         </div>
         <?php endwhile; ?>
@@ -64,22 +74,32 @@
          while (have_posts()) : the_post(); ?>
         <div class="columns">
             <div class="column is-2 col-img">
-                <img class="has-text-left" <?php the_post_thumbnail();?></>
+                <img class="has-text-left" <?php the_post_thumbnail();?>
+                </>
             </div>
             <div class="column is-4">
-                <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <h4>
+                    <?php the_title(); ?>
+                </h4>
+                <p>
+                    <?php the_content(); ?>
+                </p>
             </div>
             <?php endwhile; ?>
 
-             <?php query_posts('p=33');
+            <?php query_posts('p=33');
          while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" <?php the_post_thumbnail();?></>
+                <img class="has-text-left" <?php the_post_thumbnail();?>
+                </>
             </div>
             <div class="column is-4">
-                <h4><?php the_title(); ?></h4>
-                <p><?php the_content(); ?></p>
+                <h4>
+                    <?php the_title(); ?>
+                </h4>
+                <p>
+                    <?php the_content(); ?>
+                </p>
             </div>
             <?php endwhile; ?>
         </div>
@@ -88,6 +108,41 @@
 </section>
 <!-- // Fin services  -->
 
+
+
+<!-- Début recentwork  -->
+<section class="recentwork">
+    <div class="container">
+        <h3 class="has-text-centered">Réalisations récente:</h3>
+
+
+        <div class="columns is-centered">
+            <div class="container-items">
+                <?php
+    $recentPosts = new WP_Query('category_name=Portfolio&showposts=4');
+?>
+                    <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+                    <div class="column is-3">
+                        <a href="<?php the_field('lien_du_projet');?>" target="_blank">
+                            <img <?php the_post_thumbnail();?>
+                        </a>
+
+
+                    </div>
+
+                    <?php endwhile; ?>
+            </div>
+        </div>
+
+
+
+        <div class="has-text-centered">
+            <a href="portfolio.html" class="button is-medium is-info">Voir mon portfolio</a>
+        </div>
+
+    </div>
+</section>
+<!-- // Fin recentwork  -->
 <?php get_footer();?>
 </body>
 
