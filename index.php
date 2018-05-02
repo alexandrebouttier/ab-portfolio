@@ -14,8 +14,8 @@
                 <span class="has-text-info has-text-weight-bold">Développeur</span> front-end
             </h2>
             <div class="hero-btn">
-                <a href="portfolio.html" class="button is-medium is-info">Voir portfolio</a>
-                <a href="contact.html" class="button is-medium is-info is-outlined">Contact</a>
+                <a href="portfolio" class="button is-medium is-info">Voir portfolio</a>
+                <a href="contact" class="button is-medium is-info is-outlined">Contact</a>
             </div>
         </div>
     </div>
