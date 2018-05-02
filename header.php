@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://ogp.me/ns#" lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta lang="fr" />
+    <meta name="author" content="Alexandre Bouttier" / <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alexandre Bouttier Développeur front-end</title>
+    <link rel="apple-touch-icon" type="image/png" href="wp-content/themes/ab-portfolio/img/favicon.png">
+    <link rel="icon" type="image/png" href="wp-content/themes/ab-portfolio/img/favicon.png" />
+    <meta name="description" content="Développeur front-end Rennes" />
+    <meta name="keywords" content="développeur web, développeur front-end, front, front-end, HTML5, CSS3, Javascript" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46924947-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-46924947-3');
+    </script>
+
+    <!-- Facebook Open graph  -->
+    <meta property="og:title" content="Alexandre Bouttier Développeur Front-End" />
+    <meta property="og:site_name" content="Alexandre Bouttier Développeur Front-End" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://www.alexandrebouttier.fr" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.alexandrebouttier.fr/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Logo du site web de Alexandre Bouttier" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="og:description" content="Portfolio de Alexandre Bouttier, développeur front-end junior à Rennes." />
+    <meta property="fb:app_id" content="1902889856687684"/>
     <?php wp_head(); ?>
 </head>
 <body>

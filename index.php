@@ -137,7 +137,7 @@
 
 
         <div class="has-text-centered">
-            <a href="portfolio.html" class="button is-medium is-info">Voir mon portfolio</a>
+            <a href="portfolio" class="button is-medium is-info">Voir mon portfolio</a>
         </div>
 
     </div>
