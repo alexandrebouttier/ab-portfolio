@@ -9,33 +9,33 @@
 </head>
 <body>
 
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
-    <div class="navbar-brand">
+        <div class="navbar-brand">
 
-<img class="logo" <?php the_custom_logo(); ?>
+            <img class="logo" <?php the_custom_logo(); ?>
 
-<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
     <span></span>
     <span></span>
     <span></span>
 </span>
-    </div>
-<div id="navbarMenuHeroA" class="navbar-menu">
-                        <div class="navbar-end">
-        <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'primary',
-            'depth'             => 2,
-            'container'         => false,
-            // 'items_wrap'     => 'div',
-            'menu_class'        => 'navbar-menu',
-            'menu_id'           => 'primary-menu',
-            'after'             => "</div>",
-            'walker'            => new Navwalker())
-        );
-        ?>
         </div>
-    </nav>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+                <?php
+                wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'depth' => 2,
+                        'container' => false,
+                        // 'items_wrap'     => 'div',
+                        'menu_class' => 'navbar-menu',
+                        'menu_id' => 'primary-menu',
+                        'after' => "</div>",
+                        'walker' => new Navwalker())
+                );
+                ?>
+            </div>
+</nav>
 </div>
    

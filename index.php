@@ -87,6 +87,8 @@
 </div>
 </section>
 <!-- // Fin services  -->
+
+<?php get_footer();?>
 </body>
 
 </html>
