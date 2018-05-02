@@ -15,3 +15,9 @@ require_once('navwalker.php');
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'menuname' ),
 ) );
+
+function lgmac_setup(){
+    add_theme_support('post-thumbnails' );
+}
+
+add_action('after_setup_theme', 'lgmac_setup');
