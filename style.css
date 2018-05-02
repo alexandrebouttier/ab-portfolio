@@ -1,0 +1,15 @@
+/*!
+Theme Name: ab-portfolio
+Theme URI: https://www.alexandrebouttier.fr
+Author: alexandre bouttier
+Author URI: https://www.alexandrebouttier.fr
+Description: Thème portfolio
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ab-portfolio
+*/
+
+body {
+    background-color: red;
+}
