@@ -11,17 +11,18 @@
 <div>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://github.com/Poruno/Bulma-Navwalker">
-                <img class="brand-image" src="localhost//examplesrc"/>
-            </a>
+    <div class="navbar-brand">
 
-            <button class="button navbar-burger" data-target="primary-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+<img class="logo" <?php the_custom_logo(); ?>
+
+<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+</div>
+<div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
@@ -34,6 +35,8 @@
             'walker'            => new Navwalker())
         );
         ?>
+        </div>
+        </div>
 </div>
     </nav>
 </div>
