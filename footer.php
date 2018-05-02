@@ -21,3 +21,5 @@
     </div>
 </footer>
 <!-- // Fin footer  -->
+
+<?php  wp_footer();?>
