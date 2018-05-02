@@ -9,3 +9,9 @@ function lgmac_scripts(){
 }
 
 add_action('wp_enqueue_scripts','lgmac_scripts');
+
+
+require_once('navwalker.php');
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'menuname' ),
+) );
