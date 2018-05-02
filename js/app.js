@@ -1,5 +1,5 @@
 
-console.log("coucouc");
+
 // MENU MOBILE
 document.addEventListener('DOMContentLoaded', function () {
 

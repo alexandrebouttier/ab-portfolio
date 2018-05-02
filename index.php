@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <!-- Début jumbotron -->
-<section class="hero is-bold">
+<section class="hero">
 
     <div class="hero-body">
         <div class="container has-text-left">

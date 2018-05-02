@@ -149,7 +149,9 @@ a.navbar-link:hover {
 .hero {
     background-color: #404852;
 }
-
+.hero {
+    z-index: -1;
+}
 .hero .title {
     position: relative;
     color: #fff;

@@ -38,33 +38,37 @@
 </head>
 <body>
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="container">
+  
+    <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
+<div class="container">
         <div class="navbar-brand">
-
+        
             <img class="logo" <?php the_custom_logo(); ?>
+          
 
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-    <span></span>
-    <span></span>
-    <span></span>
-</span>
+            <button class="button navbar-burger" data-target="primary-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-                <?php
-                wp_nav_menu(array(
-                        'theme_location' => 'primary',
-                        'depth' => 2,
-                        'container' => false,
-                        // 'items_wrap'     => 'div',
-                        'menu_class' => 'navbar-menu',
-                        'menu_id' => 'primary-menu',
-                        'after' => "</div>",
-                        'walker' => new Navwalker())
-                );
-                ?>
-            </div>
-</nav>
+<div class="navbar-end">
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => false,
+            // 'items_wrap'     => 'div',
+            'menu_class'        => 'navbar-menu',
+            'menu_id'           => 'primary-menu',
+       
+            'walker'            => new Navwalker())
+        );
+        ?>
+        </div>
 </div>
+    </nav>
+   
+            
+
    
