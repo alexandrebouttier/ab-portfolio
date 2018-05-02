@@ -22,17 +22,17 @@ get_header();
                 <div style="margin: 10px;"class="column">
 
                     <div class="items">
-                        <a href="https://github.com/alexandrebouttier/calculjs-Electron" target="_blank">
+                        <a href=" <?php the_field('lien_du_projet');?>" target="_blank">
                             <img <?php the_post_thumbnail();?>
                             </>
                         </a>
                         <p>
                             <?php the_content(); ?>
+                            
                         </p>
                         <div class="tags is-centered">
-                            <span class="tag is-info">HTML/CSS</span>
-                            <span class="tag is-info">JQUERY</span>
-                            <span class="tag is-info">ELECTRON</span>
+                            <span class="tag is-info"><?php the_field('technos_');?></span>
+                           
                         </div>
                         <!-- Début statut  -->
 
@@ -40,11 +40,8 @@ get_header();
                             <div class="field is-grouped is-grouped-multiline">
                                 <div class="control">
                                     <div class="tags has-addons">
-                                        <span class="tag is-light">
-                                            <span class="icon has-text-info">
-                                                <i class="fas fa-info-circle"></i>
-                                            </span>Statut</span>
-                                        <span class="tag is-primary">Terminé</span>
+                                       
+                                        <span class="tag is-primary"><?php the_field('statut');?></span>
                                     </div>
                                 </div>
                             </div>
