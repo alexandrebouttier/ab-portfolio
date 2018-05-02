@@ -53,19 +53,16 @@ h3 {
 
 @font-face {
     font-family: 'Open-sans-regular';
-    src: url(../fonts/OpenSans-Regular.ttf)
+    src: url(fonts/OpenSans-Regular.ttf)
 }
 
 @font-face {
     font-family: 'Open-sans-bold';
-    src: url(../fonts/OpenSans-Bold.ttf)
+    src: url(fonts/OpenSans-Bold.ttf)
 }
 
 /*========================== 03.MENU ========================== */
 
-.hero {
-    margin-top: 60px;
-}
 
 .navbar {
     height: 62px;
@@ -81,7 +78,10 @@ h3 {
 .navbar .logo {
     height: auto;
 }
-
+.hero.is-medium .hero-body {
+     padding-bottom: none;
+     padding-top: none; 
+}
 
 @media screen and (max-width: 768px) {
     .navbar .logo {
