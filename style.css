@@ -28,7 +28,7 @@ Text Domain: ab-portfolio
 
 body {
     font-family: "Open-sans-regular";
-    overflow-x: hidden;
+  
 }
 
 /*========================== 02.POLICES ========================== */
@@ -212,6 +212,7 @@ a.button {
 .intro p {
     font-size: 1rem;
     margin-bottom: 60px;
+    text-align: center;
 }
 .intro h3 {
     text-align: center;

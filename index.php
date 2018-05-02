@@ -26,55 +26,62 @@
     <!-- Début intro  -->
     <section class="intro">
         <h3>Comment puis-je vous aider?</h3>
-        <p class="has-text-centered">Je suis
-            <span class="has-text-info has-text-weight-bold">Développeur</span> front-end junior.
-            <br>J'ai commencé le développement web en autodidacte , puis j'ai effectué une formation de développeur web à la
-            Code Académie de Rennes.
-            <br>Aujourd'hui , je met à profit mes connaissances pour réaliser vos projets de sites internet.</p>
+        <?php query_posts('pagename=accueil');
+         while (have_posts()) : the_post(); ?>
+             <?php the_content(); ?>
+            <?php endwhile; ?>
     </section>
     <!-- // Fin intro  -->
 
     <!-- Début services -->
     <section class="services">
         <div class="columns">
-        <?php query_posts('p=26'); while (have_posts()) : the_post(); ?>
+        <?php query_posts('p=26');
+         while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" src="assets/img/creation_sites_internet_logo.png" alt="logo création sites internet">
+                <img class="has-text-left" <?php the_post_thumbnail();?></>
             </div>
             <div class="column is-4">
                 <h4><?php the_title(); ?></h4>
                 <p><?php the_content(); ?></p>
-                <h4><?php the_thumbnail(); ?></h4>
             </div>
             <?php endwhile; ?>
+
+ <?php query_posts('p=28');
+         while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" src="assets/img/integration.png" alt="logo intégration web">
+                <img class="has-text-left" <?php the_post_thumbnail();?></>
             </div>
             <div class="column is-4">
-                <h4>Intégration</h4>
-                <p>J'intègre vos maquettes graphiques en HTML/CSS/JS que vous me disposez au format PSD, tout en respectant
-                    votre charte graphique.</p>
+                <h4><?php the_title(); ?></h4>
+                <p><?php the_content(); ?></p>
             </div>
         </div>
+        <?php endwhile; ?>
 
         <!--// fermeture columns  -->
+        <?php query_posts('p=31');
+         while (have_posts()) : the_post(); ?>
         <div class="columns">
             <div class="column is-2 col-img">
-                <img class="has-text-left" src="assets/img/responsive-logo.png" alt="logo responsive">
+                <img class="has-text-left" <?php the_post_thumbnail();?></>
             </div>
             <div class="column is-4">
-                <h4>Site responsive</h4>
-                <p>J'intègre vos maquettes graphiques tout en respectant votre charte graphique, tout en le rendent compatible
-                    sur tous types d'écrans.</p>
+                <h4><?php the_title(); ?></h4>
+                <p><?php the_content(); ?></p>
             </div>
+            <?php endwhile; ?>
+
+             <?php query_posts('p=33');
+         while (have_posts()) : the_post(); ?>
             <div class="column is-2 col-img">
-                <img class="has-text-left" src="assets/img/wordpress-logo.png" alt="logo Wordpress">
+                <img class="has-text-left" <?php the_post_thumbnail();?></>
             </div>
             <div class="column is-4">
-                <h4>Wordpress</h4>
-                <p>Je vous propose une solution "clé en main" avec le CMS wordpress, pour vous faciliter l'administration de
-                    votre site.</p>
+                <h4><?php the_title(); ?></h4>
+                <p><?php the_content(); ?></p>
             </div>
+            <?php endwhile; ?>
         </div>
         <!--// fermeture columns  -->
 </div>
