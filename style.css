@@ -34,6 +34,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 /*========================== 02.POLICES ========================== */
 
 h3 {
@@ -80,6 +81,10 @@ h3 {
 
 .navbar .logo {
     height: auto;
+}
+img.custom-logo {
+    height: 65px;
+    width: 62px;
 }
 .hero.is-medium .hero-body {
      padding-bottom: none;

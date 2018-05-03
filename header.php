@@ -45,8 +45,8 @@
         <div class="container">
             <div class="navbar-brand">
                 <a href="/">
-                    <img class="logo" <?php the_custom_logo(); ?>
-                    </>
+                     <?php the_custom_logo(); ?>
+                   
                 </a>
 
 
