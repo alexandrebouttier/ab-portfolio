@@ -22,3 +22,4 @@ get_header();
         </div>
     </section>
     <!-- // Fin Contact -->
+    <?php  wp_footer();?>
