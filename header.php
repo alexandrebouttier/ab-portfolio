@@ -14,6 +14,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46924947-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -33,28 +34,30 @@
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="315" />
     <meta property="og:description" content="Portfolio de Alexandre Bouttier, développeur front-end junior à Rennes." />
-    <meta property="fb:app_id" content="1902889856687684"/>
+    <meta property="fb:app_id" content="1902889856687684" />
     <?php wp_head(); ?>
 </head>
-<body>
 
-  
+<body <?php body_class(); ?>>
+
+
     <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
-<div class="container">
-        <div class="navbar-brand">
-        <a href="/">
-            <img class="logo" <?php the_custom_logo(); ?></>
-            </a>
-          
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/">
+                    <img class="logo" <?php the_custom_logo(); ?>
+                    </>
+                </a>
 
-            <button class="button navbar-burger" data-target="primary-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-<div class="navbar-end">
-        <?php
+
+                <button class="button navbar-burger" data-target="primary-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="navbar-end">
+                <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
             'depth'             => 2,
@@ -65,10 +68,6 @@
             'walker'            => new Navwalker())
         );
         ?>
+            </div>
         </div>
-</div>
     </nav>
-   
-            
-
-   

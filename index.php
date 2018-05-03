@@ -144,6 +144,3 @@
 </section>
 <!-- // Fin recentwork  -->
 <?php get_footer();?>
-</body>
-
-</html>
