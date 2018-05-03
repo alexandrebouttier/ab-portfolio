@@ -14,7 +14,7 @@
                 </a>
             </div>
             <p>
-                ©Alexandre Bouttier, 2018 - Tous droits réservés.<br>site réalisé par
+                ©Alexandre Bouttier, <?php echo date('Y'); ?> - Tous droits réservés.<br>site réalisé par
                 <strong class="has-text-info">Alexandre Bouttier</strong>
             </p>
         </div>
