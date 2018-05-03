@@ -42,8 +42,9 @@
     <nav class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
 <div class="container">
         <div class="navbar-brand">
-        
-            <img class="logo" <?php the_custom_logo(); ?>
+        <a href="/">
+            <img class="logo" <?php the_custom_logo(); ?></>
+            </a>
           
 
             <button class="button navbar-burger" data-target="primary-menu">
@@ -61,7 +62,6 @@
             // 'items_wrap'     => 'div',
             'menu_class'        => 'navbar-menu',
             'menu_id'           => 'primary-menu',
-       
             'walker'            => new Navwalker())
         );
         ?>
